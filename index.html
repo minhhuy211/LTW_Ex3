@@ -1,0 +1,154 @@
+<!doctype html>
+<html lang="en" xmlns="http://www.w3.org/1999/html">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Sign In</title>
+
+    <link rel="stylesheet" href="./CSS/style.css">
+    <link rel="stylesheet" href="./fonts/Font-Awesome/css/all.min.css">
+</head>
+<body>
+    <header class="header">
+        <div class="content">
+            <ul class="list">
+                <li class="item">home</li>
+                <li class="item">
+                    products
+                    <ul class="noti-list">
+                        <li class="noti-item">Tivi</li>
+                        <li class="noti-item">Máy tính xách tay</li>
+                    </ul>
+                </li>
+                <li class="item">about us</li>
+                <li class="item">contact</li>
+            </ul>
+        </div>
+    </header>
+
+    <div class="container">
+        <div class="contact">
+            <h3 class="contact-head">Contact Us</h3>
+            <input type="text" placeholder="Enter Your Name" class="name">
+            <input type="email" placeholder="Enter Your Email" class="email">
+            <input type="text" placeholder="Enter Number Phone" class="phone">
+            <select name="Please chooses">
+                <option value="">Please chooses</option>
+            </select>
+            <textarea name="message"  cols="30" rows="5" placeholder="Your message here"></textarea>
+            <div class="submit">
+                <span>Submit</span>
+                <i class="fa-solid fa-right-long"></i>
+            </div>
+        </div>
+    </div>
+
+    <div id="sign-In">
+        <div class="signIn">
+            <h3 class="heaed">Sign In</h3>
+            <input type="text" class="user" placeholder="username or email">
+            <input type="text" class="password" placeholder="password">
+            <button type="submit" class="btn">sign in</button>
+            <span class="nav">Or login with</span>
+            <div class="login">
+                <i class="icon fa-brands fa-facebook-f"></i>
+                <i class="icon fa-brands fa-google"></i>
+            </div>
+            <span class="footer">Sign Up</span>
+        </div>
+    </div>
+
+    <div id="account">
+        <div class="account">
+            <h3 class="acc-header">Account</h3>
+            <div class="acc">
+                <i class="fa-solid fa-person"></i>
+                <input type="text" placeholder="Full Name">
+            </div>
+            <div class="acc">
+                <i class="fa-solid fa-envelope"></i>
+                <input type="email" placeholder="Email Address">
+            </div>
+            <div class="acc">
+                <i class="fa-solid fa-key"></i>
+                <input type="password" placeholder="Password">
+            </div>
+
+            <div class="date-gen">
+                <div class="date">
+                    <h3 class="date-head">Date of Birth</h3>
+                    <input type="text" placeholder="DD">
+                    <input type="text" placeholder="MM">
+                    <input type="text" placeholder="YYYY">
+                </div>
+
+                <div class="gen">
+                    <h3 class="gen-date">Gender</h3>
+                    <span class="male active">Male</span><span class="Female">Female</span>
+                </div>
+            </div>
+
+            <h3 class="pay-head">Payment Details</h3>
+
+            <div class="pay">
+                <span class="cre active">
+                    <i class="fa-brands fa-cc-visa"></i>
+                    Credit Card
+                </span><span class="pay">
+                    <i class="fa-brands fa-cc-paypal"></i>
+                    Paypal
+                </span>
+            </div>
+
+            <div class="input-card">
+                <i class="fa-regular fa-credit-card"></i>
+                <input type="text" placeholder="Card Number">
+            </div>
+
+            <div class="card-date">
+                <span class="card-cvc">
+                    <i class="fa-solid fa-person"></i>
+                    <input type="text" placeholder="Card CVC">
+                </span>
+                <select name="month" id="month">
+                    <option value="01 Jan">01 Jan</option>
+                    <option value="02 Jan">02 Feb</option>
+                    <option value="03 Jan">03 Mar</option>
+                    <option value="04 Jan">04 Apr</option>
+                    <option value="05 Jan">05 May</option>
+                    <option value="06 Jan">06 Jun</option>
+                    <option value="07 Jan">07 Jul</option>
+                    <option value="08 Jan">08 Aug</option>
+                    <option value="09 Jan">09 Sep</option>
+                    <option value="10 Jan">10 Oct</option>
+                    <option value="11 Jan">11 Nov</option>
+                    <option value="12 Jan">12 Dec</option>
+                </select><select name="year" id="year">
+                    <option value="2012">2012</option>
+                    <option value="2013">2013</option>
+                    <option value="2014">2014</option>
+                    <option value="2015">2015</option>
+                    <option value="2016">2016</option>
+                    <option value="2017">2017</option>
+                    <option value="2018">2018</option>
+                    <option value="2019">2019</option>
+                    <option value="2020">2020</option>
+                    <option value="2021">2021</option>
+                    <option value="2022">2022</option>
+                    <option value="2023">2023</option>
+                </select>
+            </div>
+
+            <h3 class="head-foot">Terms and Conditions</h3>
+
+            <div class="accept">
+                <input type="checkbox" id="check">
+                <label for="check">I accept the terms and conditions for signing up to this service, and hereby confirm read the privacy policy.</label>
+            </div>
+        </div>
+
+    </div>
+</body>
+</html>

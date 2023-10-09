@@ -1,0 +1,422 @@
+html {
+    display: inline-block;
+    margin: 0;
+    padding: 0;
+    font-family: "Arial";
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+}
+
+/*Header*/
+.header {
+    width: 100%;
+    height: 65px;
+    background-color: #d3d3d3;
+    border-left: 10px solid #862428;
+    border-bottom: 5px solid #862428;
+}
+
+.header .content {
+    line-height: 65px;
+}
+
+.header .content .list{
+
+    display: flex;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+.header .content .list .item {
+    text-transform: uppercase;
+    font-size: 18px;
+    padding: 0 25px;
+    position: relative;
+}
+
+.header .content .list .item::after {
+    position: absolute;
+    content: "";
+    top: 65px;
+    left: 0;
+    width: 150px;
+    height: 10px;
+    display: block;
+}
+
+.header .content .list .item:hover {
+    background-color: #862428;
+    color: #ffffff;
+}
+
+.header .content .list .item:hover .noti-list {
+    display: block;
+}
+
+.header .item .noti-list {
+    position: absolute;
+    top: 69px;
+    left: 0;
+    padding: 0;
+    width: 200px;
+    background-color: #d3d3d3;
+    list-style: none;
+    text-transform: none;
+    display: none;
+    color: #000000;
+}
+
+.header .item .noti-list .noti-item {
+    font-size: 18px;
+    padding: 0 20px;
+    border-bottom: 2px solid #999999;
+}
+
+.header .item .noti-list .noti-item:hover {
+    background-color: #862428;
+    color: #ffffff;
+}
+
+/*Contact*/
+.container {
+    background-color: #efefef;
+    height: 650px;
+    display: flex;
+    align-items: center;
+}
+
+.container .contact {
+    width: 500px;
+    height: 550px;
+    margin: 0 auto;
+    background-color: #ffffff;
+    border-radius: 5px;
+}
+
+.container .contact h3 {
+    margin: 30px 0 20px 0;
+    font-size: 22px;
+    font-weight: 600;
+    text-align: center;
+}
+
+.container .contact input {
+    display: block;
+    width: 400px;
+    margin: 15px auto;
+    padding: 15px;
+    background-color: #f5f5f5;
+    border-radius: 4px;
+    border: 1px solid #bebebe;
+    font-size: 17px;
+    outline: none;
+}
+
+.container .contact select {
+    display: block;
+    width: 432px;
+    margin: 15px auto;
+    padding: 15px;
+    background-color: #f5f5f5;
+    border-radius: 4px;
+    border: 1px solid #bebebe;
+    font-size: 17px;
+    outline: none;
+}
+
+.container .contact textarea {
+    display: block;
+    width: 400px;
+    margin: 15px auto;
+    padding: 10px 15px;
+    background-color: #f5f5f5;
+    border-radius: 4px;
+    border: 1px solid #bebebe;
+    font-size: 17px;
+    outline: none;
+}
+
+.container .contact .submit {
+    width: 400px;
+    margin: 10px auto;
+    padding: 10px 20px;
+    text-align: center;
+    background-color: #3b3b3b;
+    color: #ffffff;
+    border-radius: 20px;
+}
+
+.container .contact .submit:hover {
+    cursor: pointer;
+    opacity: 0.8;
+}
+
+/*SignIn*/
+#sign-In {
+    background: url("/LTW_Ex3/imgs/background.jpg") top center / cover no-repeat;
+    height: 900px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#sign-In .signIn {
+    width: 400px;
+    height: 700px;
+    background-color: #ffffff;
+    border-radius: 6px;
+    box-shadow: 0px 10px 36px 0px rgba(0, 0, 0, 0.16);
+    text-align: center;
+}
+
+#sign-In .signIn h3 {
+    margin: 80px 0 40px;
+    font-size: 30px;
+    color: #2783dc;
+}
+
+#sign-In .signIn input {
+    display: block;
+    width: 260px;
+    margin: 20px auto;
+    padding: 15px;
+    border-radius: 8px;
+    border: none;
+    font-size: 17px;
+    outline: none;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+}
+
+#sign-In .signIn button {
+    display: block;
+    width: 160px;
+    margin: 20px auto;
+    padding: 15px;
+    color: #ffffff;
+    background-color: #3c8fe0;
+    border-radius: 20px;
+    border: none;
+    font-size: 16px;
+    text-transform: uppercase;
+    outline: none;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+}
+
+#sign-In .signIn button:hover {
+    cursor: pointer;
+    opacity: 0.8;
+}
+
+#sign-In .signIn .nav {
+    display: block;
+    padding-top: 60px;
+    font-size: 17px;
+    color: #999999;
+}
+
+#sign-In .signIn .login {
+    margin-top: 15px;
+}
+
+#sign-In .signIn .login .icon {
+    color: #999999;
+    padding: 15px;
+    margin: 10px;
+    border-radius: 50%;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+}
+
+#sign-In .signIn .login .icon:hover {
+    cursor: pointer;
+}
+
+#sign-In .signIn .login .fa-facebook-f {
+    padding: 15px 18px;
+}
+
+#sign-In .signIn .footer {
+    display: block;
+    font-size: 18px;
+    color: #999999;
+    padding-top: 120px;
+}
+
+/*Account*/
+#account {
+    background-color: #efefef;
+    height: 1000px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#account .account {
+    background-color: #ffffff;
+    height: 800px;
+    width: 500px;
+    padding: 50px;
+    border-radius: 8px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+}
+
+#account .account h3 {
+    margin: 0;
+    color: #51d94c;
+}
+
+#account .account .acc {
+    background-color: #eeeeee;
+    margin-top: 25px;
+    padding: 10px 0;
+    border-radius: 4px;
+    border: 1px solid #d3d3d3;
+}
+
+#account .account .acc i {
+    padding:0 15px;
+    color: #a4a4a4;
+    font-size: 17px;
+}
+
+#account .account .acc input {
+    width: 80%;
+    font-size: 17px;
+    padding: 10px;
+    outline: none;
+    border: none;
+    background-color: #eeeeee;
+    border-left: 1px solid #d3d3d3;
+}
+
+#account .account .date-gen {
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-between;
+}
+
+#account .date-gen h3 {
+    padding-bottom: 15px;
+}
+
+#account .date-gen input {
+    padding: 12px;
+    margin-right: 10px;
+    width: 40px;
+    background-color: #eeeeee;
+    border-radius: 3px;
+    outline: none;
+    border: 1px solid #d3d3d3;
+}
+
+#account .date-gen span {
+    display: inline-block;
+    color: #a4a4a4;
+    padding:11px 40px;
+    background-color: #eeeeee;
+    border: 1px solid #d3d3d3;
+    border-radius: 3px;
+    margin: 0;
+}
+
+#account .date-gen .gen .active {
+    background-color: #51d94c;
+    color: #ffffff;
+}
+
+#account .account .pay-head {
+    margin: 30px 0 20px 0;
+}
+
+#account .pay {
+    text-align: center;
+    padding: 10px 0 35px 0;
+}
+
+#account .pay span{
+    color: #a4a4a4;
+    background-color: #eeeeee;
+    padding: 15px 79px;
+    border: 1px solid #d3d3d3;
+    border-radius: 3px;
+}
+
+#account .pay .active {
+    background-color: #51d94c;
+    color: #ffffff;
+}
+
+#account .input-card {
+    background-color: #eeeeee;
+    padding: 5px 0;
+    border-radius: 4px;
+    border: 1px solid #d3d3d3;
+    margin-bottom: 15px;
+}
+
+#account .input-card i {
+    padding:0 15px;
+    color: #a4a4a4;
+    font-size: 17px;
+}
+
+#account .input-card input {
+    width: 80%;
+    font-size: 17px;
+    padding: 10px;
+    outline: none;
+    border: none;
+    background-color: #eeeeee;
+    border-left: 1px solid #a4a4a4;
+}
+
+#account .card-date {
+    padding-top: 10px;
+}
+
+#account .card-date .card-cvc {
+    background-color: #eeeeee;
+    padding: 15px 0;
+    border-radius: 4px;
+    border: 1px solid #d3d3d3;
+    margin-bottom: 15px;
+    margin-right: 17px;
+}
+
+#account .card-date .card-cvc i {
+    padding:0 15px;
+    color: #a4a4a4;
+    font-size: 17px;
+}
+
+#account .card-date .card-cvc input {
+    width: 190px;
+    font-size: 17px;
+    padding: 10px;
+    outline: none;
+    border: none;
+    background-color: #eeeeee;
+    border-left: 1px solid #a4a4a4;
+}
+
+#account .card-date select {
+    width: 110px;
+    padding: 15px;
+    outline: none;
+    background-color: #eeeeee;
+    border: 1px solid #d3d3d3;
+    border-radius: 3px;
+}
+
+#account .head-foot {
+    padding: 60px 0 20px;
+}
+
+#account .accept label {
+    color: #a4a4a4;
+}
+
+
